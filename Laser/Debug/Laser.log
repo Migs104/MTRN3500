@@ -1,0 +1,8 @@
+﻿  Laser.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\laser\laser.cpp(90): error C2109: subscript requires array or pointer type
+  SMFcn.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  SMObject.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  Generating Code...

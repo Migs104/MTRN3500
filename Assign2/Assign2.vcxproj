@@ -44,7 +44,6 @@
     <ClCompile Include="..\C++ Base Files\Shape.cpp" />
     <ClCompile Include="..\C++ Base Files\VectorMaths.cpp" />
     <ClCompile Include="..\C++ Base Files\Vehicle.cpp" />
-    <ClCompile Include="test.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
