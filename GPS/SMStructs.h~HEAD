@@ -1,24 +1,12 @@
 #ifndef SMSTRUCTS_H
 #define SMSTRUCTS_H
 
-<<<<<<< HEAD
-#pragma pack(1)
-=======
->>>>>>> 22deb3d2b9c518070518b315deb6555545d89527
 struct GPS {
 	unsigned char discard[44];
 	double Northing;
 	double Easting;
 	double Height;
 	unsigned char discard2[40];
-<<<<<<< HEAD
-	unsigned int Checksum;
-};
-
-struct Laser {
-	double x[361];
-	double y[361];
-=======
 	double Checksum;
 };
 #pragma pack(1)
@@ -26,7 +14,6 @@ struct Laser {
 struct Laser {
 	double x[1100];
 	double y[1100];
->>>>>>> 22deb3d2b9c518070518b315deb6555545d89527
 	int NumPoints;
 	double LaserTimeStamp;
 };
@@ -89,9 +76,6 @@ struct UGV {
 	double UGVTimeStamp;
 };
 
-<<<<<<< HEAD
-=======
 #pragma pack(1)
->>>>>>> 22deb3d2b9c518070518b315deb6555545d89527
 
 #endif

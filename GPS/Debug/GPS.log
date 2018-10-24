@@ -1,4 +1,20 @@
 ﻿  GPS.cpp
+<<<<<<< HEAD
   GPS.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
   GPS.vcxproj -> C:\Users\Miguel\Desktop\Assignment 2\Assign2\MTRN3500\Debug\GPS.exe
   GPS.vcxproj -> C:\Users\Miguel\Desktop\Assignment 2\Assign2\MTRN3500\Debug\GPS.pdb (Partial PDB)
+=======
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\gps\gps.cpp(55): warning C4101: 'RxData': unreferenced local variable
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\gps\gps.cpp(41): warning C4101: 'ResponseData': unreferenced local variable
+  SMFcn.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  SMObject.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  Generating Code...
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  GPS.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  GPS.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+  GPS.vcxproj -> C:\Users\Migs104\Desktop\MTRN3500\Assignment 2\Assign2\MTRN3500\Debug\GPS.exe
+>>>>>>> 22deb3d2b9c518070518b315deb6555545d89527

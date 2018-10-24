@@ -1,5 +1,15 @@
 ﻿  Laser.cpp
+<<<<<<< HEAD
 Laser.cpp(46): warning C4101: 'ResponseData': unreferenced local variable
   Laser.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
   Laser.vcxproj -> C:\Users\Miguel\Desktop\Assignment 2\Assign2\MTRN3500\Debug\Laser.exe
   Laser.vcxproj -> C:\Users\Miguel\Desktop\Assignment 2\Assign2\MTRN3500\Debug\Laser.pdb (Partial PDB)
+=======
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\laser\laser.cpp(90): error C2109: subscript requires array or pointer type
+  SMFcn.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  SMObject.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  Generating Code...
+>>>>>>> 22deb3d2b9c518070518b315deb6555545d89527
