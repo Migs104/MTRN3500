@@ -1,10 +1,15 @@
 
+#using <System.dll>
+
 #include <iostream>
 #include <cstdlib>
 #include <cstdio>
 #include <cstring>
 #include <sstream>
 #include <map>
+
+#include <conio.h>
+#include <stdio.h>
 
 #ifdef __APPLE__
 	#include <OpenGL/gl.h>
@@ -38,6 +43,12 @@
 #include "Messages.hpp"
 #include "HUD.hpp"
 
+#include "SMFcn.h"
+#include "SMObject.h"
+#include "SMStructs.h"
+#include "SMFcn.cpp"
+#include "SMObject.cpp"
+
 void display();
 void reshape(int width, int height);
 void idle();
@@ -67,46 +78,56 @@ double steering = 0;
 //int _tmain(int argc, _TCHAR* argv[]) {
 int main(int argc, char ** argv) {
 
-	const int WINDOW_WIDTH = 800;
-	const int WINDOW_HEIGHT = 600;
+	TCHAR ProM[] = TEXT("ProcessManagement");
+	SMObject PMObj(ProM, sizeof(ProcessManagement));
+	PMObj.SMAccess();
+	ProcessManagement* PM = (ProcessManagement*)PMObj.pData;
+	while (!PM->ShutDown.Flags.OpenGlView) {
+		PM->HeartBeat.Flags.OpenGlView = 1;
 
-	glutInit(&argc, (char**)(argv));
-	glutInitDisplayMode(GLUT_RGBA | GLUT_DEPTH | GLUT_DOUBLE);
-	glutInitWindowPosition(0, 0);
-	glutInitWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT);
-	glutCreateWindow("MTRN3500 - GL");
+		const int WINDOW_WIDTH = 800;
+		const int WINDOW_HEIGHT = 600;
 
-	Camera::get()->setWindowDimensions(WINDOW_WIDTH, WINDOW_HEIGHT);
+		glutInit(&argc, (char**)(argv));
+		glutInitDisplayMode(GLUT_RGBA | GLUT_DEPTH | GLUT_DOUBLE);
+		glutInitWindowPosition(0, 0);
+		glutInitWindowSize(WINDOW_WIDTH, WINDOW_HEIGHT);
+		glutCreateWindow("MTRN3500 - GL");
 
-	glEnable(GL_DEPTH_TEST);
+		Camera::get()->setWindowDimensions(WINDOW_WIDTH, WINDOW_HEIGHT);
 
-	glutDisplayFunc(display);
-	glutReshapeFunc(reshape);
-	glutIdleFunc(idle);
+		glEnable(GL_DEPTH_TEST);
 
-	glutKeyboardFunc(keydown);
-	glutKeyboardUpFunc(keyup);
-	glutSpecialFunc(special_keydown);
-	glutSpecialUpFunc(special_keyup);
+		glutDisplayFunc(display);
+		glutReshapeFunc(reshape);
+		glutIdleFunc(idle);
 
-	glutMouseFunc(mouse);
-	glutMotionFunc(dragged);
-	glutPassiveMotionFunc(motion);
+		glutKeyboardFunc(keydown);
+		glutKeyboardUpFunc(keyup);
+		glutSpecialFunc(special_keydown);
+		glutSpecialUpFunc(special_keyup);
 
-	// -------------------------------------------------------------------------
-	// Please uncomment the following line of code and replace 'MyVehicle'
-	//   with the name of the class you want to show as the current 
-	//   custom vehicle.
-	// -------------------------------------------------------------------------
-	vehicle = new MyVehicle();
+		glutMouseFunc(mouse);
+		glutMotionFunc(dragged);
+		glutPassiveMotionFunc(motion);
+
+		// -------------------------------------------------------------------------
+		// Please uncomment the following line of code and replace 'MyVehicle'
+		//   with the name of the class you want to show as the current 
+		//   custom vehicle.
+		// -------------------------------------------------------------------------
+		vehicle = new MyVehicle();
 
 
-	glutMainLoop();
+		glutMainLoop();
 
-	if (vehicle != NULL) {
-		delete vehicle;
+		if (vehicle != NULL) {
+			delete vehicle;
+		}
+
 	}
 
+	PM->HeartBeat.Flags.OpenGlView = 0;
 	return 0;
 }
 
@@ -174,6 +195,14 @@ double getTime()
 }
 
 void idle() {
+
+	TCHAR ProM[] = TEXT("ProcessManagement");
+	SMObject PMObj(ProM, sizeof(ProcessManagement));
+	PMObj.SMAccess();
+	ProcessManagement* PM = (ProcessManagement*)PMObj.pData;
+	if (PM->ShutDown.Flags.OpenGlView == 1) {
+		exit(0);
+	}
 
 	if (KeyManager::get()->isAsciiKeyPressed('a')) {
 		Camera::get()->strafeLeft();

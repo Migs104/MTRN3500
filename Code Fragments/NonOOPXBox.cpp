@@ -5,6 +5,8 @@
 
 using namespace std;
 
+#pragma comment(lib, "XInput.lib")
+
 
 int main()
 {
@@ -12,7 +14,7 @@ int main()
 	XINPUT_BATTERY_INFORMATION BatteryInformation;
 	XINPUT_STATE State;
 	XINPUT_VIBRATION Vibration;
-	XInputEnable(true);
+	//XInputEnable(true);
 	XInputGetBatteryInformation(0,BATTERY_DEVTYPE_GAMEPAD,&BatteryInformation);
 	switch(BatteryInformation.BatteryLevel)
 	{

@@ -1,0 +1,5 @@
+﻿  Laser.cpp
+Laser.cpp(46): warning C4101: 'ResponseData': unreferenced local variable
+  Laser.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  Laser.vcxproj -> C:\Users\Miguel\Desktop\Assignment 2\Assign2\MTRN3500\Debug\Laser.exe
+  Laser.vcxproj -> C:\Users\Miguel\Desktop\Assignment 2\Assign2\MTRN3500\Debug\Laser.pdb (Partial PDB)
