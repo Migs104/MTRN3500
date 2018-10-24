@@ -1,0 +1,3 @@
+﻿  XBox.cpp
+c:\users\miguel\desktop\assignment 2\assign2\mtrn3500\xbox\xbox.cpp(43): warning C4700: uninitialized local variable 'State' used
+  XBox.vcxproj -> C:\Users\Miguel\Desktop\Assignment 2\Assign2\MTRN3500\Debug\XBox.exe

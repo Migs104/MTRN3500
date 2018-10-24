@@ -1,3 +1,66 @@
-﻿  test.cpp
+<<<<<<< HEAD
+﻿  Camera.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+MyVehicle.obj : warning LNK4248: unresolved typeref token (01000017) for 'GLUquadric'; image may not run
+  Assign2.vcxproj -> C:\Users\Miguel\Desktop\Assignment 2\Assign2\MTRN3500\Debug\Assign2.exe
+  Assign2.vcxproj -> C:\Users\Miguel\Desktop\Assignment 2\Assign2\MTRN3500\Debug\Assign2.pdb (Partial PDB)
+=======
+﻿  Camera.cpp
 c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
-c1xx : fatal error C1083: Cannot open source file: 'test.cpp': No such file or directory
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(42): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(43): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(84): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(215): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(216): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(217): warning C4305: '*=': truncation from 'double' to 'float'
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(276): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(282): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(283): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(354): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(398): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(399): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(434): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(439): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(443): warning C4101: 'new_dest_dir': unreferenced local variable
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(768): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(769): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(774): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(775): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(780): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\camera.cpp(781): warning C4305: '=': truncation from 'double' to 'float'
+  Frustum.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  Ground.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\ground.cpp(21): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\ground.cpp(22): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\ground.cpp(24): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\ground.cpp(25): warning C4244: 'argument': conversion from 'int' to 'GLfloat', possible loss of data
+  HUD.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\hud.cpp(38): warning C4018: '<': signed/unsigned mismatch
+  KeyManager.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  main.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  Messages.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\messages.cpp(229): warning C4018: '<': signed/unsigned mismatch
+  MyVehicle.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  Quaternion.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  Shape.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  VectorMaths.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+c:\users\migs104\desktop\mtrn3500\assignment 2\assign2\mtrn3500\c++ base files\vectormaths.cpp(123): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Vehicle.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  Generating Code...
+  .NETFramework,Version=v4.0.AssemblyAttributes.cpp
+c1xx : warning C4199: two-phase name lookup is not supported for C++/CLI, C++/CX, or OpenMP; use /Zc:twoPhase-
+  Camera.obj : /DEBUG:FASTLINK is not supported when managed code is present; restarting link with /DEBUG:FULL
+  Camera.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
+MyVehicle.obj : warning LNK4248: unresolved typeref token (01000017) for 'GLUquadric'; image may not run
+  Assign2.vcxproj -> C:\Users\Migs104\Desktop\MTRN3500\Assignment 2\Assign2\MTRN3500\Debug\Assign2.exe
+>>>>>>> 22deb3d2b9c518070518b315deb6555545d89527
